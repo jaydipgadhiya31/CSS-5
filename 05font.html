@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <style>
+        .font-family {
+            font-family: sans-serif; font-size: 20px;
+        }
+        .font-size{
+            font-size: 20px;
+        }
+        .font-family{
+            font-size: 20px;
+        }
+        .font-weight{
+            font-weight: 600;
+        }
+        .line-height{
+            line-height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+    <li><h2>font-family</h2></li>
+    <p class="font-family">The font-family CSS property specifies a prioritized list of one or more font family names and/or generic family names
+    for the selected element.</p>
+
+    <li><h2>font-size</h2></li>
+    <p class="font-size">The font-size CSS property sets the size of the font. Changing the font size also updates the sizes of the font
+    size-relative &lt;length&gt; units, such as em, ex, and so forth.</p>
+    <li><h2>font-stretch</h2></li>
+    <p class="font-stretch">The font-stretch CSS property selects a normal, condensed, or expanded face from a font.</p>
+    <li><h2>font-style</h2></li>
+    <p class="font-style">The font-style CSS property sets whether a font should be styled with a normal, italic, or oblique face from its
+    font-family.</p>
+    <li><h2>font-variant</h2></li>
+    <p></p>
+    <li><h2>font-weight</h2></li>
+    <p class="font-weight">The font-weight CSS property sets the weight (or boldness) of the font. The weights available depend on the font-family
+    that is currently set.</p>
+    <li><h2>line-height</h2></li>
+    <p class="line-height">
+        The line-height CSS property sets the height of a line box in horizontal writing modes. In vertical writing modes, it
+        sets the width of a line box. It's commonly used to set the distance between lines of text. On block-level elements in
+        horizontal writing modes, it specifies the preferred height of line boxes within the element, and on non-replaced inline
+        elements, it specifies the height that is used to calculate line box height.
+    </p>
+    </ol>
+    <table align="centers">
+        <thead>
+            <tr>
+                <th>Absolute Unit</th>
+                <th style="text-align: center">Description</th>
+                <th style="text-align: right">Example</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>px</td>
+                <td style="text-align: center">1/96 of 1 inch (96px = 1 inch)</td>
+                <td style="text-align: right"><span style="font-size: 12px;">font-size: 12px;</span></td>
+            </tr>
+            <tr>
+                <td>pt</td>
+                <td style="text-align: center">1/72 of 1 inch (72pt = 1 inch)</td>
+                <td style="text-align: right"><span style="font-size: 12pt;">font-size: 12pt;</span></td>
+            </tr>
+            <tr>
+                <td>pc</td>
+                <td style="text-align: center">12pt = 1pc</td>
+                <td style="text-align: right"><span style="font-size: 1.2pc;">font-size: 1.2pc;</span></td>
+            </tr>
+            <tr>
+                <td>cm</td>
+                <td style="text-align: center">centimeter</td>
+                <td style="text-align: right"><span style="font-size: 0.6cm;">font-size: 0.6cm;</span></td>
+            </tr>
+            <tr>
+                <td>mm</td>
+                <td style="text-align: center">millimeter (10 mm = 1 cm)</td>
+                <td style="text-align: right"><span style="font-size: 4mm;">font-size: 4mm;</span></td>
+            </tr>
+            <tr>
+                <td>in</td>
+                <td style="text-align: center">inches</td>
+                <td style="text-align: right"><span style="font-size: 0.2in;">font-size: 0.2in;</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br>
+    <table align="center">
+        <thead>
+            <tr>
+                <th>Relative Unit</th>
+                <th style="text-align: center">Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>%</td>
+                <td style="text-align: center">Relative to the parent element’s value for that property</td>
+            </tr>
+            <tr>
+                <td>em</td>
+                <td style="text-align: center">Relative to the current font-size of the element</td>
+            </tr>
+            <tr>
+                <td>rem</td>
+                <td style="text-align: center">Relative to the font-size of the root (e.g. the <code
+                        class="highlighter-rouge"><span class="nt">&lt;html&gt;</span></code> element). “rem” = “root
+                    em”</td>
+            </tr>
+            <tr>
+                <td>ch</td>
+                <td style="text-align: center">Number of characters (1 character is equal to the width of the current
+                    font’s 0/zero)</td>
+            </tr>
+            <tr>
+                <td>vh</td>
+                <td style="text-align: center">Relative to the height of the viewport (window or app size). 1vh = 1/100
+                    of the viewport’s height</td>
+            </tr>
+            <tr>
+                <td>vw</td>
+                <td style="text-align: center">Relative to the width of viewport. 1vw = 1/100 of the viewport’s width.
+                </td>
+            </tr>
+            <tr>
+                <td>vmin</td>
+                <td style="text-align: center">Relative to viewport’s smaller dimension (e.g. for portrait orientation,
+                    the width is smaller than the height so it’s relative to the width). 1vmin = 1/100 of viewport’s
+                    smaller dimension.</td>
+            </tr>
+            <tr>
+                <td>vmax</td>
+                <td style="text-align: center">Relative to viewport’s larger dimension (e.g. height for portrait
+                    orientation). 1vmax = 1/100 of viewport’s larger dimension.</td>
+            </tr>
+            <tr>
+                <td>ex</td>
+                <td style="text-align: center">Relative to height of the current font’s lowercase “x”.</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br><br><br>
+</body>
+</html>
