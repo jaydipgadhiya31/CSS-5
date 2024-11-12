@@ -61,6 +61,16 @@
     margin-right: -15px;
     margin-left: -15px;
 }
+
+h1{
+    background-color: blue;
+}
+
+#three-plate-section{
+    h1{
+        background-color: red;
+    }
+}
 .col {
     padding-right: 15px;
     padding-left: 15px;
