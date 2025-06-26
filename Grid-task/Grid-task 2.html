@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "hero main main"
+                "sidebar main main"
+                "sidebar extra extra"
+                "related-images related-images related-posts"
+                "footer footer footer";
+                /* grid-template-areas:
+                "header header header" ; */
+            grid-template-columns: 3fr 2fr 3fr;
+            gap: 5px;
+            /* Adjust gap as needed */
+        }
+
+        header {
+            grid-area: header;
+            background-color: #ADD8E6;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .hero {
+            grid-area: hero;
+            background-color: #D8BFD8;
+            padding: 20px;
+        }
+
+        .main-content {
+            grid-area: main;
+            background-color: #FFD700;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #90EE90;
+            padding: 20px;
+        }
+
+        .extra-content {
+            grid-area: extra;
+            background-color: #808080;
+            padding: 20px;
+        }
+
+        .related-images {
+            grid-area: related-images;
+            background-color: #3CB371;
+            padding: 20px;
+        }
+
+        .related-posts {
+            grid-area: related-posts;
+            background-color: #FFE4E1;
+            padding: 20px;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #FFA500;
+            padding: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>Header</header>
+    <div class="hero">Hero</div>
+    <div class="main-content">
+        Main Content
+        <p>***If things do not look right, make sure your browser is in "Experimental Mode"</p>
+    </div>
+    <div class="sidebar">Sidebar</div>
+    <div class="extra-content">Extra Content</div>
+    <div class="related-images">Related Images</div>
+    <div class="related-posts">Related Posts</div>
+    <footer>Footer</footer>
+</body>
+
+</html>

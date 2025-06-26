@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto auto;
+            gap: 10px;
+            background-color: #444;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .grid-item {
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .grid-item:nth-child(1) {
+            background-color: #e57373;
+            /* Red */
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+        }
+
+        .grid-item:nth-child(2) {
+            background-color: #81d4fa;
+            /* Light Blue */
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        .grid-item:nth-child(3) {
+            background-color: #d8c28f;
+            /* Tan/Beige */
+            grid-column: 3 / 4;
+            grid-row: 1 / 2;
+        }
+
+        .grid-item:nth-child(4) {
+            background-color: #d8c28f;
+            /* Tan/Beige */
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .grid-item:nth-child(5) {
+            background-color: #fff;
+            /* White */
+            grid-column: 2 / 4;
+            grid-row: 3 / 4;
+        }
+
+        .grid-item:nth-child(6) {
+            background-color: #e57373;
+            /* Red */
+            grid-column: 2 / 3;
+            grid-row: 4 / 5;
+        }
+
+        .grid-item:nth-child(7) {
+            background-color: #81d4fa;
+            /* Light Blue */
+            grid-column: 3 / 4;
+            grid-row: 4 / 5;
+        }
+
+        .grid-item:nth-child(8) {
+            background-color: #e57373;
+            /* Red */
+            grid-column: 3 / 4;
+            grid-row: 2 / 5;
+        }
+
+        .grid-item:nth-child(9) {
+            background-color: #fff;
+            /* White */
+            grid-column: 1 / 2;
+            grid-row: 3 / 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+</body>
+
+</html>
