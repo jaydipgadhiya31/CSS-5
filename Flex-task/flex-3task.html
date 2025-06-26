@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Example</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            /* Ensure the body takes up at least the full viewport height */
+        }
+
+        header,
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: white;
+        }
+
+        header {
+            background-color: #f56a31;
+            /* Orange */
+        }
+
+        footer {
+            background-color: #d1117e;
+            /* Pink */
+        }
+
+        .main-content {
+            display: flex;
+            flex-grow: 1;
+            /* Allow main content to expand and fill available space */
+        }
+
+        .left-sidebar,
+        .right-sidebar,
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+        .left-sidebar {
+            background-color: #6495ed;
+            /* Blue */
+            width: 20%;
+            /* Adjust as needed */
+        }
+
+        .content {
+            background-color: #483d8b;
+            /* Dark Slate Blue */
+            flex-grow: 1;
+        }
+
+        .right-sidebar {
+            background-color: #2e8b57;
+            /* Sea Green */
+            width: 20%;
+            /* Adjust as needed */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        HEADER
+    </header>
+
+    <div class="main-content">
+        <div class="left-sidebar">
+            LEFT SIDEBAR
+        </div>
+        <div class="content">
+            MAIN CONTENT
+        </div>
+        <div class="right-sidebar">
+            RIGHT SIDEBAR
+        </div>
+    </div>
+
+    <footer>
+        FOOTER
+    </footer>
+</body>
+
+</html>

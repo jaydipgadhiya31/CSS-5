@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-1</title>
+    <style>
+        .wrapper{
+            display: flex;
+            gap: .625rem ;
+            flex-direction: column;
+            flex: 1;
+        }
+        .header{
+            background: red;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            column-gap:  10px;
+            height: 10px;
+        }
+        .footer{
+             background: orange;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+            height: 10px;
+        }
+         .box-1{
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+                flex: 1;
+        }
+        .col1-2{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: .625rem;
+            flex: 1;
+        }
+        .hero-1{
+            background: blue;
+            color: white;
+            /* width: 50%; */
+            padding: 20px;
+            height: 290px;
+            text-align: center;
+            font-size: 25px;
+            gap: 10px;
+        }
+        .sidebar-1{
+            background: green;
+            color: white;
+            /* width: 50%; */
+            padding: 20px;
+            height: 300px;
+            text-align: center;
+            font-size: 25px;
+            gap: 10px;
+        }
+        .col2-2{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 10px;
+             flex: 1;
+        }
+        .main-1{
+             background: yellow;
+            color: white;
+            /* width: 100%; */
+            padding: 20px;
+            font-size: 25px;
+            height: 400px;
+            gap: 10px;
+        }
+        .extra-1{
+             background: red;
+            color: white;
+            /* width: 35%; */
+            padding: 20px;
+            font-size: 25px;
+            height: 190px;
+            gap: 10px;
+            
+        }
+        .third-contant{
+            height: 200px;
+            display: flex;
+            gap: 10px;
+            flex: 1;
+        }
+        .images{
+            width: 80%;
+            background: brown;
+            text-align: center;
+            font-size: 25px;
+            color: white;
+            padding: 20px;
+            flex: 1;
+        }
+        .post{
+            background: pink;
+            color: white;
+            text-align: center;
+            font-size: 25px;
+            width: 20%;
+            padding: 20px;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <div class="header"><b>HEADER</b></div>
+    <div class="box-1">
+        <div class="col1-2">
+            <div class="hero-1">HERO-1</div>
+            <div class="sidebar-1">sidebar-1</div>
+        </div>
+        <div class="col2-2">
+            <div class="main-1">main-1</div>
+            <div class="extra-1">extra-1</div>
+        </div>
+    </div>
+    <div class="third-contant">
+        <div class="images"><b>Related-images</b></div>
+        <div class="post"><b>Related-post</b></div>
+    </div>
+    <div class="footer"><b>footer</b></div>
+    </div>
+</body>
+</html>
