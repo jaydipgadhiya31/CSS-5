@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Layout</title>
+    <style>
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow cards to wrap to the next line */
+            justify-content: center;
+            /* Center cards horizontally */
+            padding: 20px;
+            gap: 20px;
+            /* Space between cards */
+        }
+
+        .card {
+            background-color: #f0f0f0;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            /* Include padding and border in width */
+            width: 300px;
+            /* Base width for desktops */
+        }
+
+        /* Tablet (2 cards per row) */
+        @media (max-width: 991px) {
+            .card {
+                width: calc(50% - 30px);
+                /* Adjust width for two cards, accounting for gap and padding */
+            }
+        }
+
+        /* Mobile (1 card per row) */
+        @media (max-width: 767px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>Card 1</h3>
+            <p>This is the content of card 1.</p>
+        </div>
+        <div class="card">
+            <h3>Card 2</h3>
+            <p>This is the content of card 2.</p>
+        </div>
+        <div class="card">
+            <h3>Card 3</h3>
+            <p>This is the content of card 3.</p>
+        </div>
+        <div class="card">
+            <h3>Card 4</h3>
+            <p>This is the content of card 4.</p>
+        </div>
+        <div class="card">
+            <h3>Card 5</h3>
+            <p>This is the content of card 5.</p>
+        </div>
+        <div class="card">
+            <h3>Card 6</h3>
+            <p>This is the content of card 6.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

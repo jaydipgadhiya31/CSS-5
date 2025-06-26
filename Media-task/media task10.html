@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sticky Footer</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: plum;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+            justify-content: space-around;
+        }
+           @media (max-width: 991px) {
+            .content {
+                background: blue;
+            }
+        }
+        @media (max-width: 767px) {
+            .content{
+                flex-direction: column;
+                background: orange;
+            }
+        }
+         @media (max-width: 766px) {
+            .content{
+                flex-direction: row;
+               background: aquamarine;
+            }
+         }
+         @media (max-width: 340px) {
+            .content{
+                flex-direction: column;
+               background:slateblue;
+               align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div>
+            <h5>main</h5>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+        <div>
+            <h5>main</h5>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+        <div>
+            <h5>main</h5>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+            <p>lorem</p>
+        </div>
+    </div>
+</body>
+
+</html>

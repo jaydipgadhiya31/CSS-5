@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Text Alignment</title>
+    <style>
+        .responsive-text {
+            text-align: left;
+            padding: 20px;
+            background: red;
+            border: 1px solid black;
+        }
+        @media (max-width: 1024px) {
+            .responsive-text {
+                text-align: center;
+                background: brown;
+            }
+        }
+        @media (max-width: 600px) {
+            .responsive-text {
+                text-align: right;
+                background: palevioletred;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive-text">
+        This text will change alignment based on screen size.
+        <br><br>
+        Desktop: Left-aligned.
+        <br>
+        Tablet: Centered.
+        <br>
+        Mobile: Right-aligned.
+    </div>
+</body>
+
+</html>

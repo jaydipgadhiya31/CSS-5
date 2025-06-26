@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Centered Button</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .responsive-button {
+            padding: 15px 30px;
+            font-size: 25px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .responsive-button:hover {
+            transform: scale(1.05);
+        }
+        @media (max-width: 600px) {
+            .responsive-button {
+                font-size: 20px;
+                padding: 10px 20px;
+            }
+        }
+          @media (min-width: 1200px) {
+            .responsive-button  {
+                background-color: red;
+                 font-size: 40px;
+                padding: 20px 30px;
+            }
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .responsive-button  {
+                background-color: green;
+                 font-size: 35px;
+                padding: 15px 20px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            .responsive-button  {
+                background-color: yellow;
+                color: black;
+                 font-size: 20px;
+                padding: 10px 20px;
+            }
+        }
+        @media (max-width: 767px) {
+            .responsive-button  {
+                background-color: black;
+                 font-size: 30px;
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="responsive-button">Click Me</button>
+</body>
+
+</html>
